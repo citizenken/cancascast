@@ -56,7 +56,7 @@ window.onload = function () {
       }
       message = messageJson("draw", {context: context, Xcoords: clickX, Ycoords: clickY});
       console.log(message);
-      sendMessage(message);
+      // sendMessage(message);
     }
 
 
