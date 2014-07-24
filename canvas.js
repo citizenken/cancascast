@@ -39,11 +39,11 @@ window.onload = function () {
 
     function redraw(){
       context.clearRect(0, 0, context.canvas.width, context.canvas.height); // Clears the canvas
-      
+
       context.strokeStyle = "#df4b26";
       context.lineJoin = "round";
       context.lineWidth = 25;
-      for(var i=0; i < clickX.length; i++) {        
+      for(var i=0; i < clickX.length; i++) {
         context.beginPath();
         if(clickDrag[i] && i){
           context.moveTo(clickX[i-1], clickY[i-1]);
@@ -54,6 +54,8 @@ window.onload = function () {
          context.closePath();
          context.stroke();
       }
+      message = messageJson("draw", {context: context, Xcoords: clickX, Ycoords: clickY});
+      sendMessage(message);
     }
 
 
