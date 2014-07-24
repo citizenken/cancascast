@@ -54,7 +54,7 @@ window.onload = function () {
          context.closePath();
          context.stroke();
       }
-      message = messageJson("draw", {context: context, Xcoords: clickX, Ycoords: clickY});
+      message = JSON.stringify({type:"draw", body:{context: context, Xcoords: clickX, Ycoords: clickY}});
       console.log(message);
       // sendMessage(message);
     }
