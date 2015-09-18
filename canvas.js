@@ -2,26 +2,6 @@
 window.onload = function () {
     var colorPurple = "#cb3594";
     var colorGreen = "#659b41";
-    var colorYellow = "#ffcf33";
-    var colorBrown = "#986928";
-
-      curColor = colorBrown
-    })
-
-    $("#canvas").mousedown(function (e) {
-        var mouseX = e.pageX - this.offsetLeft;
-        var mouseY = e.pageY - this.offsetTop;
-
-        paint = true;
-        clicked = true;
-        addClick(mouseX, mouseY);
-        redraw();
-    });
-
-    $('#canvas').mousemove(function(e){
-      if(paint){
-        addClick(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
-        redraw();
       }
     });
 
