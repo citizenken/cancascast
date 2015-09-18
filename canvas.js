@@ -1,19 +1,11 @@
 
 window.onload = function () {
     var colorPurple = "#cb3594";
-    var colorGreen = "#659b41";
-      }
-    });
-
     $('#canvas').mouseup(function(e){
         paint = false;
-        clicked = false;
-    });
 
     $('#canvas').mouseleave(function(e){
         paint = false;
-    });
-
     var clickX = new Array();
     var clickY = new Array();
     var clickDrag = new Array();
