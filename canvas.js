@@ -5,24 +5,6 @@ window.onload = function () {
     var colorYellow = "#ffcf33";
     var colorBrown = "#986928";
 
-    var curColor = colorPurple;
-    var clickColor = new Array();
-    var clicked = false;
-
-    context = document.getElementById('canvas').getContext("2d");
-
-    document.onselectstart = function(){ return false; }
-
-    $("#choosePurpleSimpleColors").on("click", function () {
-      curColor = colorPurple
-    })
-    $("#chooseGreenSimpleColors").on("click", function () {
-      curColor = colorGreen
-    })
-    $("#chooseYellowSimpleColors").on("click", function () {
-      curColor = colorYellow
-    })
-    $("#chooseBrownSimpleColors").on("click", function () {
       curColor = colorBrown
     })
 
